@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+</head>
+<body>
+	
+	<section layout:fragment="content">
+		<div class="container mt-5">
+			<div class="jumbotron py-3 ">
+				<h1 class="display-3">Hello, world!</h1>
+				<p class="lead">This is a simple Tasks App using Spring Boot.</p>
+				<hr class="my-2">
+				<p>Lester Barahona Aguirre.</p>
+				<p class="lead text-right">
+					<a class="btn btn-primary btn-lg" th:href="@{/task/create}" role="button">Create New Task</a>
+				</p>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
